@@ -31,6 +31,8 @@ def callback_handler(call: telebot.types.CallbackQuery):
 		case "back_to_main_menu":
 			keyboard = get_inline_main_menu()
 			main_menu_query_handler(bot, call, keyboard)
+		case "add_problem_to_retry_list":
+			...
 		case _:
 			pass
 	
